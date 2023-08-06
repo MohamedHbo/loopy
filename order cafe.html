@@ -1,0 +1,126 @@
+<html>
+    <link rel="icon" type="image/png" href="h.jpg"/>
+<head>
+    <style>
+        .mn{
+         width: 310px;
+            height: 30px;
+        }.mk{
+            
+            background-color: aliceblue;
+            width: 350px;
+            height: 550px;
+            margin-left: 980px;
+            margin-bottom: 900px;
+        }.h{
+            width: 600px;
+            height: 2px; 
+            margin-bottom:50px;
+           
+        }
+        .mnk{
+            position: fixed;
+            opacity: 1px;
+        }
+        
+        
+        
+        .page {
+  height: 100vh;
+}
+.page::before {
+  content: "";
+  position: fixed;
+  width: 270%;
+  height: 190%;
+  background-color: rgba(205, 92, 92);
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) skew(0, -10deg);
+  border-radius: 50%;
+  z-index: -1;
+  animation: waving 3s ease-in-out infinite alternate;
+}
+        @keyframes waving {
+  from {
+    transform: translateX(-50%) skew(0, -10deg);
+  }
+  to {
+    transform: translateX(-30%) skew(10deg, 0);
+  }
+}
+        
+        
+input[type="submit"] {
+    background-color: rgba(205, 92, 92, 0.8);
+    width: 150px;
+    height: 40px;
+    margin-top: 230px;
+    border-radius: 8px;
+    margin-bottom: 50px;
+  }
+
+  /* تعريف التنسيق عند تحويل المؤشر فوق الزر */
+  input[type="submit"]:hover {
+    background-color: rgba(205, 92, 92, 5); /* هنا سيتم تغيير اللون */
+    /* يمكنك إضافة أي تغييرات أخرى ترغب بها عند التحويل فوق الزر */
+  } 
+        
+    </style>
+    
+  
+    <link rel="stylesheet"  href="page.css">
+    </head>
+    <body>
+    <h1 style="margin-right: 1020px;font-size:50px; background-color: rgba(205, 92, 92, 0.4);border-radius: 10px;color: antiquewhite;">LOBBy Bar ..
+         </h1>
+        
+      
+        
+    
+        <form method="post" action="mohamedcafe.html" onsubmit="return validateForm()">
+         <div class="page">
+        
+        
+            
+        <div class="h" >
+            
+    <h2 style="font-size: 22px;">Enter your username </h2>
+        <input class="mn" style="border-radius: 8px;"  id="username" name="username" placeholder="Enter your username">
+            
+            
+        <h2 style="font-size: 22px;" >Date</h2>
+        <input type="date" class="mn" style="border-radius: 8px;" id="password" name="password" placeholder="Enter your Date">
+            
+            
+            
+        <h3 style="font-size: 22px;">Table number</h3>
+            <input class="mn" style="border-radius: 8px;" id="number" name="number" placeholder="Enter your Table number">
+            
+            </div>
+             
+             
+             
+         <a href="mohamedcafe.html"><input type="submit" /> </a> 
+
+        </div>
+        </form>
+            
+             
+             
+        <script>
+         function validateForm() {
+  var username = document.getElementById("username").value;
+  var password = document.getElementById("password").value;
+  var password = document.getElementById("number").value;
+  if (username === "" || password === "" || number==="") {
+    alert("Please fill in all fields");
+    return false;
+  }
+             
+}
+        </script>
+         
+        
+    </body>
+</html>

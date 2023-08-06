@@ -1,0 +1,22 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+}
+
+#preloader {
+  animation: fadeOut 2s forwards; /* تطبيق الأنيميشن عند بدء التحميل */
+}
+
+@keyframes fadeOut {
+  0% { opacity: 1; } /* بداية الأنيميشن: شفافية 100% */
+  100% { opacity: 0; } /* نهاية الأنيميشن: شفافية 0% */
+}
+
+#content {
+  display: none; /* يتم إخفاء المحتوى حتى ينتهي الأنيميشن */
+}
